@@ -42,5 +42,3 @@ def render_stat_of_the_day(dict_stat):
         TEMPLATE.append(f"{'Всего':^6}|{sum_stat[us][0]:^5}{sum_stat[us][1]:^5}{sum_stat[us][2]:^5}{sum_stat[us][3]:^5}|\n")
                         
     return f'{strok}\n'.join(TEMPLATE)
-            
-print(render_stat_of_the_day(dict_sotka_stat(r"C:\Users\denzy\OneDrive\Документы\Python\VS_file\python_file\Trials_Vit\stat.scv")))
